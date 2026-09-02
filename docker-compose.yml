@@ -1,0 +1,9 @@
+services:
+  clover:
+    build: .
+    container_name: clover-bot
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs

@@ -1,0 +1,17 @@
+[Unit]
+Description=Clover Telegram Video Splitter
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=clover
+WorkingDirectory=/opt/clover
+EnvironmentFile=/opt/clover/.env
+ExecStart=/opt/clover/venv/bin/python /opt/clover/bot.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
