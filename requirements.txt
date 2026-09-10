@@ -5,3 +5,4 @@ aiofiles>=24.1.0
 psutil>=6.0.0
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
+Flask>=3.1.0,<4
